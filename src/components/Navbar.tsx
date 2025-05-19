@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Menu, ChevronDown } from "lucide-react";
+import { ModeToggle } from "./ToogleDarkMode";
 
 const Navbar = () => {
   return (
@@ -25,6 +26,7 @@ const Navbar = () => {
           <a href="#pc" className="hover:text-black transition-colors duration-200">
             PC
           </a>
+         
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 hover:text-black transition-colors duration-200">
               Cabang <ChevronDown className="w-4 h-4" />
@@ -44,6 +46,7 @@ const Navbar = () => {
           <a href="/about" className="hover:text-black transition-colors duration-200">
             About
           </a>
+           <ModeToggle/>
         </div>
 
         {/* Desktop Book Button */}
@@ -53,6 +56,7 @@ const Navbar = () => {
         >
           Book
         </Button>
+        
 
         {/* Mobile Menu */}
         <DropdownMenu>
