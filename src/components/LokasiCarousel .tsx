@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -13,10 +13,12 @@ const locations = [
 
 const LokasiCarousel = () => {
   return (
-    <section className="py-10 ">
+    <section className="py-10">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold">Cabang Kami</h2>
-        <p className="text-gray-600">Temukan lokasi Spade terdekat dengan Anda</p>
+        <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Cabang Kami</h2>
+        <p className="text-gray-600 dark:text-gray-400">
+          Temukan lokasi Spade terdekat dengan Anda
+        </p>
       </div>
       <div className="max-w-4xl mx-auto">
         <Swiper

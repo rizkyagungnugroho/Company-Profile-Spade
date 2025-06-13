@@ -115,8 +115,27 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    font-family: var(--font-lora);
   }
   body {
     @apply bg-background text-foreground;
   }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Muter pelan pas hover + scale */
+.hover-animate-keren:hover {
+  transform: rotate(20deg) scale(1.1);
+  transition: all 0.2s ease-in-out;
 }

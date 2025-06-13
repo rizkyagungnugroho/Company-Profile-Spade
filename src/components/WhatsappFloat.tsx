@@ -16,14 +16,14 @@ export default function WhatsappFloat() {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
       {visible && (
-        <div className="bg-white shadow-lg rounded-xl p-4 w-64 text-sm text-gray-800 relative animate-fade-in">
+        <div className="bg-white shadow-lg rounded-xl p-4 w-64 text-sm text-gray-800 relative animate-fade-in transition cursor-pointer animate-float hover-animate-keren">
           <button
             onClick={handleClose}
             className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
           >
             <X size={16} />
           </button>
-          <p className="font-bold">Hi! 👋</p>
+          <p className="font-bold ">Hi! 👋</p>
           <p>Kamu bisa menghubungi kami via WhatsApp</p>
         </div>
       )}
@@ -31,7 +31,7 @@ export default function WhatsappFloat() {
         href={waLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition"
+        className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition cursor-pointer animate-float hover-animate-keren"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

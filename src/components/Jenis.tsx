@@ -7,7 +7,7 @@ const branches = [
   {
     title: "PC Gaming",
     description: "Nikmati suasana cozy di cabang kami yang terletak di jantung Karawaci.",
-    image: "/assets/pcgaming.png",
+    image: "/assets/pc.jpg",
     icon: <Monitor className="w-5 h-5 text-indigo-500" />,
   },
   {
@@ -19,12 +19,11 @@ const branches = [
   {
     title: "Cafe",
     description: "Tempat nongkrong nyaman dengan vibes khas Jakarta Selatan.",
-    image: "/assets/cafe.png",
+    image: "/assets/cafe1.jpg",
     icon: <Coffee className="w-5 h-5 text-amber-500" />,
   },
 ];
 
-// Variants
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
@@ -50,7 +49,7 @@ export default function Jenis() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={cardVariants}
-            className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100"
+            className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
           >
             <div className="relative w-full aspect-square">
               <Image
@@ -63,14 +62,14 @@ export default function Jenis() {
             </div>
             <div className="p-6">
               <div className="flex items-center gap-2 mb-2">
-                <div className="bg-gray-100 p-2 rounded-full">
+                <div className="bg-gray-100 dark:bg-gray-800 p-2 rounded-full">
                   {branch.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800 tracking-tight">
+                <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100 tracking-tight">
                   {branch.title}
                 </h3>
               </div>
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
                 {branch.description}
               </p>
             </div>

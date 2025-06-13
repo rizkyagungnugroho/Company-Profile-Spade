@@ -23,7 +23,7 @@ const Jumbotron = () => {
               {/*Y itu adalah atas bawah*/}
 
               <p className="motion-preset-confetti text-5xl font-semibold text-[#D6D6D6]">
-                <span className="text-[#ffd900] ">
+                <span className="text-[#ffd900] font-lora">
                   Spade Gaming Space <br />
                 </span>
                 {""}
